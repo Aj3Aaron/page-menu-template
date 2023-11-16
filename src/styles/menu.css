@@ -1,0 +1,100 @@
+body{
+    background-color: #ffffff;
+}
+
+.menu{
+    background-color: #141414;
+    background-image: url("../img/fondo-menu.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 5%;
+}
+
+.contenedor-menu{
+    backdrop-filter: blur(0px);
+    background-color: rgb(0 0 0 / 50%);
+    padding: 10px;
+}
+
+.contenedor-menu2, .contenedor-menu{
+    border: 2px solid #ffffff;
+}
+
+.div-row{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.article-menu{
+    width: 50%;
+}
+
+.platillo{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted #ffffff;
+    overflow: hidden;
+    width: 95%;
+}
+
+.categoria {
+    color: #ffffff;
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.nombre{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.precio{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.descripcion{
+    font-size: 16px;
+    color: #a3a3a3;
+    clear: both;
+}
+
+.h1-menu{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+
+    .div-row{
+        padding: 2%;
+        display: flex;
+    }
+
+    .article-menu{
+        width: 100%;
+    }
+
+    .platillo{
+        border-bottom:none;
+    }
+
+    .nombre{
+        width: 80%;
+    }
+}
