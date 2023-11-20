@@ -98,7 +98,7 @@ body{
         width: 80%;
     }
 
-    .menu{
-        /* background-image: url("../img/background-menu-phone.gif"); */
+    .contenedor-menu{
+        margin-top: 20%;
     }
 }
