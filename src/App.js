@@ -12,8 +12,8 @@ function App() {
     <Header />
     <RedesSociales />
     <Menu />
-    <Contacto />
     <Ubicacion />
+    <Contacto />
     
     </>
   );

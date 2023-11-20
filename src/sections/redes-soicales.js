@@ -9,7 +9,7 @@ library.add(fab);
 
 function RedesSociales() {
    return (
-      <section className='redes'>
+      <section id='redes-sociales' className='redes'>
          <h1 className='h1-redes'>Síguenos</h1>
          <div className="div-redes-sociales">
             <a target="_blank" rel="noopener noreferrer"  className='a-icon a-instagram'>

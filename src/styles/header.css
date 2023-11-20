@@ -4,7 +4,7 @@ header{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
-    background-position: 50% 50%;
+    /* background-position: 50% 50%; */
 }
 
 *{
@@ -13,13 +13,16 @@ header{
     box-sizing: border-box;
 }
 
-.titulos-header{
-    
-    color: #ffffff;
-}
 
 .h1-nombre{
+    color: #ffffff;
     font-weight: bold;
+}
+
+.presentacion{
+    color: #a3a3a3;
+    /* padding-top: 2%; */
+    cursor: context-menu;
 }
 
 .div-header{
@@ -27,4 +30,10 @@ header{
 }
 
 
-
+@media (max-width: 800px) {
+    .presentacion{
+        color: #a3a3a3;
+        padding-top: 2%;
+        cursor: context-menu;
+    }
+}

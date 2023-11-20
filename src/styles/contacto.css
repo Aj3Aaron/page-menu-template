@@ -1,0 +1,34 @@
+#contacto{
+    background-image: url('../img/fondo-contacto.jpg');
+}
+
+.h1-contacto{
+    color: #fff;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    
+}
+
+.whatsapp{
+    color: #ffffff;
+    cursor: pointer;    
+    width: 90%;
+    height: 90%;
+}
+
+.a-whatsapp{
+    background-color: #25D366;
+}
+
+.div-contacto{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-numero{
+    color: #fff;
+    font-size: 2rem;
+}

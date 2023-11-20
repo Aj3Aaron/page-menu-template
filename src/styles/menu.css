@@ -4,7 +4,7 @@ body{
 
 .menu{
     background-color: #141414;
-    background-image: url("../img/fondo-menu.png");
+    background-image: url("../img/background-menu-phone.gif");
     background-color: transparent;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -96,5 +96,9 @@ body{
 
     .nombre{
         width: 80%;
+    }
+
+    .menu{
+        /* background-image: url("../img/background-menu-phone.gif"); */
     }
 }
