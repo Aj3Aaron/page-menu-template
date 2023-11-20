@@ -1,9 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import { useLocation, BrowserRouter as Router } from 'react-router-dom';
 
 import '../styles/nav.css'
 
 function Nav() {
+
+    const [linkMenuClicked, setLinkMenuClicked] = useState(false);
+
+    useEffect(() => {
+        const existeMenuEnURL = () => {
+        const searchParams = new URLSearchParams(window.location.search);
+        return searchParams.has('menu');
+        };
+
+        // Ejecuta el código solo al abrir la página
+        if (existeMenuEnURL()) {
+        const linkMenu = document.querySelector('.link-menu');
+        const darkOverlay = document.querySelector('.dark-overlay');
+
+        // Click en linkMenu
+        linkMenu.click();
+        setLinkMenuClicked(true);
+        }
+    }, []); // El array de dependencias está vacío para que se ejecute solo una vez al montar el componente
+
+    useEffect(() => {
+        if (window.innerWidth <= 800) {
+
+            // Ejecuta el código solo después de que linkMenu ha sido clickeado
+            if (linkMenuClicked) {
+                const darkOverlay = document.querySelector('.dark-overlay');
+                darkOverlay.click();
+            }
+        }else{
+            document.body.style.overflow = 'auto'
+            return;
+        }
+    }, [linkMenuClicked]);
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -34,7 +68,7 @@ function Nav() {
                         spy={true}
                         smooth={true}
                         duration={500}
-                        className='titulo_nav'
+                        className='titulo_nav link-menu'
                         onClick={toggleMenu}
                     >
                         
